@@ -14,20 +14,20 @@
     </head>
     <body>
         <div>
-            <nav>
-                <div>Laeti-dev</div>
-                <div>
+            <nav class="P-navbar">
+                <div class="P-navbar__logo">Laeti-dev</div>
+                <div class="P-navbar__links">
                     <div>About</div>
                     <div>Projects</div>
                     <div>Contact</div>
                 </div>
-                <div>
+                <div class="P-navbar__social">
                     <div>Github</div>
                     <div>Linkedin</div>
                 </div>
             </nav>
             <div>
-            <div>
+            <div P-navigation>
                 <div class="P-navigation__dot active"></div>
                 <div class="P-navigation__dot"></div>
                 <div class="P-navigation__dot"></div>
@@ -35,16 +35,32 @@
                 <div class="P-navigation__dot"></div>
             </div>
                 <div>
-                    <header>
-                        <h1>Hi, I'm a Laeti</h1>
-                        <h2>A fullstack developper</h2>
+                    <header class="P-slide">
                     </header>
                     <div class="tracks">
-                        <div id="base" class="P-slide">track main</div>
-                        <div id="about" class="P-slide">track about</div>
-                        <div id="projects" class="P-slide">track projects</div>
-                        <div id="contact" class="P-slide">track contact</div>
-                        
+                        <div id="base" class="P-slide active">track main</div>
+                        <h1>Hi, I'm a Laeti</h1>
+                        <h2>A fullstack developper</h2>
+                        <div id="about" class="P-slide">track about
+                            <h1>About</h1>
+                            <div class="P-slide__about">
+                                <img src="" alt="">
+                                <div></div>
+                            </div>
+                        </div>
+                        <div id="projects" class="P-slide">
+                            <h1>Projects</h1>
+                            <div>
+                                <div class="P-slide__project"></div>
+                                <div class="P-slide__project"></div>
+                                <div class="P-slide__project"></div>
+                                <div class="P-slide__project"></div>
+                            </div>
+                        </div>
+                        <div id="contact" class="P-slide">
+                            <h1>Contact</h1>
+                            <div></div>
+                        </div>   
                     </div>
                 </div>
             </div>
