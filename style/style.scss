@@ -1,0 +1,44 @@
+/* <style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;700&display=swap');
+</style> */
+/* @import "./fontawesome/scss/fontawesome.scss";
+@import "./fontawesome/scss/solid.scss";
+@import "./fontawesome/scss/brands.scss";
+@import "./fontawesome/scss/icons.scss"; */
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 8px;
+    padding: 16px;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    li {
+        align-items: center;
+
+    }
+}
+
+.P-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li {
+    margin: 8px;
+    padding: 8px;
+}
