@@ -1,10 +1,3 @@
-/* <style>
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;700&display=swap');
-</style> */
-/* @import "./fontawesome/scss/fontawesome.scss";
-@import "./fontawesome/scss/solid.scss";
-@import "./fontawesome/scss/brands.scss";
-@import "./fontawesome/scss/icons.scss"; */
 body {
   width: 100%;
 }
@@ -25,7 +18,6 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
 .P-navbar__logo {
   flex-basis: 25%;
   align-items: center;
@@ -42,7 +34,8 @@ ul li {
   margin-right: 16px;
   padding-right: 24px;
 }
-ul li i {
+
+i {
   font-size: 2rem;
 }
 
