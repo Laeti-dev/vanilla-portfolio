@@ -1,7 +1,7 @@
 @import "../utils/variables";
 
 .P-slides {
-    width: 100vw;
+    width: auto;
     overflow: hidden;
     display: flex;
     flex-direction: row;
@@ -32,16 +32,14 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        padding: auto;
-        position: relative;
+        margin-right: 56px;
         top: 0;
         left: 56px;
         z-index: 1;
     
         &--track {
             height: 90vh;
-            width: 90vw;
-            padding-left: 48px;
+            margin-left: 56px;
             text-align: center;
             align-self: center;
         }
@@ -55,8 +53,26 @@
     border-radius: 16px;
 }
 
+.P-slides__content--track--about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+
+    p {
+        width: 50%;
+        margin: auto;
+        text-align: justify;
+        line-height: 40px;
+    }
+
+    img {
+        margin: auto;
+    }
+}
+
 .profile {
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 16px;
 }
