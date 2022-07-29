@@ -1,0 +1,31 @@
+@import "../utils/variables";
+
+.P-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-nav;
+    color: $color-lightfont;
+    &__logo {
+        flex-basis: 25%;
+        align-items: center;
+        margin-left: 16px;
+    }
+}
+
+ul {
+    list-style: none;
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    li {
+        margin-right: 16px;
+        padding-right: 24px;  
+    }
+}
+
+i {
+    font-size: 2rem;
+}

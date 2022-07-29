@@ -1,0 +1,18 @@
+@import "../utils/variables";
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    background-color: $color-background;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+}
