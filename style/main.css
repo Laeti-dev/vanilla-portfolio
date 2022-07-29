@@ -1,10 +1,13 @@
 body {
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
   margin: 0;
   padding: 0;
+  background-color: #D3D6DB;
 }
 
 * {
@@ -17,10 +20,13 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background-color: #233B6E;
+  color: #EFF0F4;
 }
 .P-navbar__logo {
   flex-basis: 25%;
   align-items: center;
+  margin-left: 16px;
 }
 
 ul {
@@ -39,4 +45,4 @@ i {
   font-size: 2rem;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
