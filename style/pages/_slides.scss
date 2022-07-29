@@ -8,11 +8,9 @@
 
     &__navigation {
         width: 48px;
-        position: absolute;
-        top: 50%;
-        bottom: auto;
-        right: auto;
-        left: 24px;
+        max-height: fit-content;
+        position: fixed;
+        padding-top: 22%;
         display: inline-block;
         z-index: 2;
         background-color: transparent;
@@ -29,6 +27,7 @@
     }
     
     &__content {
+        position: absolute;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -37,6 +36,7 @@
         position: relative;
         top: 0;
         left: 56px;
+        z-index: 1;
     
         &--track {
             height: 90vh;
@@ -49,4 +49,14 @@
     
 }
 
+.lewagon {
+    width: 200px;
+    height: 200px;
+    border-radius: 16px;
+}
 
+.profile {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
