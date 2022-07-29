@@ -2,7 +2,6 @@
 
 .P-slides {
     width: 100vw;
-    height: 90vh;
     overflow: hidden;
     display: flex;
     flex-direction: row;
@@ -25,8 +24,10 @@
             background-color: $color-darkextra;
             margin: 8px;
         }
-    }
 
+        
+    }
+    
     &__content {
         display: flex;
         flex-direction: column;
@@ -36,13 +37,16 @@
         position: relative;
         top: 0;
         left: 56px;
-
+    
         &--track {
             height: 90vh;
-            width: 100vw;
+            width: 90vw;
+            padding-left: 48px;
+            text-align: center;
+            align-self: center;
         }
     }
-
+    
 }
 
 

@@ -49,7 +49,6 @@ i {
 
 .P-slides {
   width: 100vw;
-  height: 90vh;
   overflow: hidden;
   display: flex;
   flex-direction: row;
@@ -84,7 +83,10 @@ i {
 }
 .P-slides__content--track {
   height: 90vh;
-  width: 100vw;
+  width: 90vw;
+  padding-left: 48px;
+  text-align: center;
+  align-self: center;
 }
 
 /*# sourceMappingURL=main.css.map */
