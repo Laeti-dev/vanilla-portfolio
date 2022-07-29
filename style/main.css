@@ -7,7 +7,7 @@ body {
 .container {
   margin: 0;
   padding: 0;
-  background-color: #D3D6DB;
+  background-color: #EEEEEE;
 }
 
 * {
@@ -22,8 +22,8 @@ body {
   align-items: center;
   position: sticky;
   top: 0;
-  background-color: #233B6E;
-  color: #EFF0F4;
+  background-color: #334257;
+  color: #5babe0;
 }
 .P-navbar__logo {
   flex-basis: 25%;
@@ -49,15 +49,14 @@ i {
 
 .P-slides {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   overflow: hidden;
   display: flex;
   flex-direction: row;
-  align-items: center;
 }
 .P-slides__navigation {
-  width: 40px;
-  position: sticky;
+  width: 48px;
+  position: absolute;
   top: 50%;
   bottom: auto;
   right: auto;
@@ -66,25 +65,26 @@ i {
   z-index: 2;
   background-color: transparent;
 }
-.P-slides__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  padding: auto;
-}
-
 .P-slides__navigation--dot {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background-color: #415F9D;
+  background-color: #476072;
   margin: 8px;
 }
-
-P.slides__content--track {
-  height: 900px;
+.P-slides__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: auto;
+  position: relative;
+  top: 0;
+  left: 56px;
+}
+.P-slides__content--track {
+  height: 90vh;
+  width: 100vw;
 }
 
 /*# sourceMappingURL=main.css.map */

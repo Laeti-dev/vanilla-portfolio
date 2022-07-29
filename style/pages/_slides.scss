@@ -2,15 +2,14 @@
 
 .P-slides {
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     overflow: hidden;
     display: flex;
     flex-direction: row;
-    align-items: center;
 
     &__navigation {
-        width: 40px;
-        position: sticky;
+        width: 48px;
+        position: absolute;
         top: 50%;
         bottom: auto;
         right: auto;
@@ -18,26 +17,32 @@
         display: inline-block;
         z-index: 2;
         background-color: transparent;
+
+        &--dot {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: $color-darkextra;
+            margin: 8px;
+        }
     }
 
     &__content {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-        width: 100vw;
         padding: auto;
+        position: relative;
+        top: 0;
+        left: 56px;
+
+        &--track {
+            height: 90vh;
+            width: 100vw;
+        }
     }
+
 }
 
-.P-slides__navigation--dot {
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: $color-darkextra;
-    margin: 8px;
-}
 
-P.slides__content--track {
-    height: 900px;
-}
