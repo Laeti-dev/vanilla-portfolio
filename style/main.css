@@ -75,6 +75,9 @@ i {
   background-color: #476072;
   margin: 8px;
 }
+.P-slides__navigation--dot.active {
+  background-color: #5babe0;
+}
 .P-slides__content {
   position: absolute;
   display: flex;
@@ -82,7 +85,7 @@ i {
   justify-content: flex-start;
   align-items: center;
   margin-right: 56px;
-  top: 0;
+  top: 80px;
   left: 56px;
   z-index: 1;
 }
@@ -94,8 +97,8 @@ i {
 }
 
 .lewagon {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 16px;
 }
 

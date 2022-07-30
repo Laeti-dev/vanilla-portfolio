@@ -21,9 +21,12 @@
             border-radius: 50%;
             background-color: $color-darkextra;
             margin: 8px;
-        }
 
-        
+            &.active {
+                background-color: $color-lightfont;
+            }
+        }
+    
     }
     
     &__content {
@@ -33,7 +36,7 @@
         justify-content: flex-start;
         align-items: center;
         margin-right: 56px;
-        top: 0;
+        top: 80px;
         left: 56px;
         z-index: 1;
     
@@ -43,13 +46,12 @@
             text-align: center;
             align-self: center;
         }
-    }
-    
+    } 
 }
 
 .lewagon {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 16px;
 }
 
