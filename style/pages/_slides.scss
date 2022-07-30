@@ -22,11 +22,13 @@
             background-color: $color-darkextra;
             margin: 8px;
 
-            &.active {
+            .active {
                 background-color: $color-lightfont;
             }
         }
     
+
+        
     }
     
     &__content {
@@ -39,14 +41,14 @@
         top: 80px;
         left: 56px;
         z-index: 1;
-    
-        &--track {
-            height: 90vh;
-            margin-left: 56px;
-            text-align: center;
-            align-self: center;
-        }
     } 
+}
+
+.section {
+    height: 100vh;
+    margin-left: 56px;
+    text-align: center;
+    align-self: center;
 }
 
 .lewagon {

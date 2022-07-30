@@ -75,7 +75,7 @@ i {
   background-color: #476072;
   margin: 8px;
 }
-.P-slides__navigation--dot.active {
+.P-slides__navigation--dot .active {
   background-color: #5babe0;
 }
 .P-slides__content {
@@ -89,8 +89,9 @@ i {
   left: 56px;
   z-index: 1;
 }
-.P-slides__content--track {
-  height: 90vh;
+
+.section {
+  height: 100vh;
   margin-left: 56px;
   text-align: center;
   align-self: center;
