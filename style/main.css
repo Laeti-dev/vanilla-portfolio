@@ -21,12 +21,22 @@ h1 {
   letter-spacing: 2px;
 }
 
+a {
+  text-decoration: none;
+  color: #5babe0;
+}
+a:visited {
+  color: #5babe0;
+}
+
 .P-navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
   top: 0;
   background-color: #334257;
   color: #5babe0;
