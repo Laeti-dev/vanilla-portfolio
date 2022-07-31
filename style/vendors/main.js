@@ -1,18 +1,18 @@
-
-const section = document.querySelectorAll('.section')
-
-const inViewport = (e) => {
-    const rect = section.getBoundingClientRect();
+const isInViewport = (e) => {
+    const rect = e.getBoundingClientRect();
     return (
         rect.top >= 0 &&
         rect.left >= 0 &&
         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-)}
+    );
+}
 
-section.forEach((section) => {
-    return (
-        console.log(rect)
-    )
-})
+const section = document.querySelector('#about')
+const links = document.querySelector('.links-item')
+
+document.addEventListener('scroll', function() {
+    if (isInViewport(section)) {
+        return(console.log('yes'))
+}})
 
