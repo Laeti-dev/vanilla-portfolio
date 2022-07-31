@@ -5,12 +5,13 @@
     overflow: hidden;
     display: flex;
     flex-direction: row;
+    color: $color-nav;
 
     &__navigation {
         width: 48px;
         max-height: fit-content;
         position: fixed;
-        padding-top: 22%;
+        padding-top: 30%;
         display: inline-block;
         z-index: 2;
         background-color: transparent;
@@ -22,8 +23,8 @@
             background-color: $color-darkextra;
             margin: 8px;
 
-            .active {
-                background-color: $color-lightfont;
+            &.active {
+                background-color: $color-active;
             }
         }
     
@@ -45,10 +46,11 @@
 }
 
 .section {
-    height: 100vh;
+    height: 80vh;
     margin-left: 56px;
     text-align: center;
     align-self: center;
+    margin-top: 56px;
 }
 
 .lewagon {
@@ -79,4 +81,12 @@
     width: 200px;
     height: 200px;
     border-radius: 16px;
+}
+
+.P-slides__content--title-bar {
+    background: $color-nav;
+    height: 4px;
+    width: 80px;
+    border-radius: 8px;
+    margin: auto;
 }

@@ -1,0 +1,21 @@
+P.-sildes__navigation {
+    width: 48px;
+    max-height: fit-content;
+    position: fixed;
+    padding-top: 22%;
+    display: inline-block;
+    z-index: 2;
+    background-color: transparent;
+
+    &--dot {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: $color-darkextra;
+        margin: 8px;
+
+        .active {
+            background-color: $color-lightfont;
+        }
+    }
+}

@@ -19,14 +19,16 @@ h1 {
   text-align: center;
   font-size: 2rem;
   letter-spacing: 2px;
+  margin-bottom: 0;
+  margin-top: 80px;
 }
 
 a {
   text-decoration: none;
-  color: #5babe0;
+  color: hwb(204 36% 12%);
 }
 a:visited {
-  color: #5babe0;
+  color: hwb(204 36% 12%);
 }
 
 .P-navbar {
@@ -38,8 +40,9 @@ a:visited {
   z-index: 2;
   width: 100vw;
   top: 0;
+  height: 48px;
   background-color: #334257;
-  color: #5babe0;
+  color: hwb(204 36% 12%);
 }
 .P-navbar__logo {
   flex-basis: 25%;
@@ -57,6 +60,11 @@ ul {
 ul li {
   margin-right: 16px;
   padding-right: 24px;
+  font-weight: 700;
+}
+
+li > .active {
+  color: #B8405E;
 }
 
 i {
@@ -68,12 +76,13 @@ i {
   overflow: hidden;
   display: flex;
   flex-direction: row;
+  color: #334257;
 }
 .P-slides__navigation {
   width: 48px;
   max-height: fit-content;
   position: fixed;
-  padding-top: 22%;
+  padding-top: 30%;
   display: inline-block;
   z-index: 2;
   background-color: transparent;
@@ -85,8 +94,8 @@ i {
   background-color: #476072;
   margin: 8px;
 }
-.P-slides__navigation--dot .active {
-  background-color: #5babe0;
+.P-slides__navigation--dot.active {
+  background-color: #B8405E;
 }
 .P-slides__content {
   position: absolute;
@@ -101,10 +110,11 @@ i {
 }
 
 .section {
-  height: 100vh;
+  height: 80vh;
   margin-left: 56px;
   text-align: center;
   align-self: center;
+  margin-top: 56px;
 }
 
 .lewagon {
@@ -133,6 +143,14 @@ i {
   width: 200px;
   height: 200px;
   border-radius: 16px;
+}
+
+.P-slides__content--title-bar {
+  background: #334257;
+  height: 4px;
+  width: 80px;
+  border-radius: 8px;
+  margin: auto;
 }
 
 /*# sourceMappingURL=main.css.map */
