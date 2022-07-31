@@ -28,8 +28,13 @@ h1 {
 a {
     text-decoration: none;
     color: $color-lightfont;
+    transition: color 0.5s ease-out;
 
     &:visited {
         color: $color-lightfont;
+    }
+
+    &:hover {
+        color: $color-active;
     }
 }

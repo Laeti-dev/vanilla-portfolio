@@ -26,9 +26,13 @@ h1 {
 a {
   text-decoration: none;
   color: hwb(204 36% 12%);
+  transition: color 0.5s ease-out;
 }
 a:visited {
   color: hwb(204 36% 12%);
+}
+a:hover {
+  color: #d45575;
 }
 
 .P-navbar {
@@ -64,7 +68,7 @@ ul li {
 }
 
 li > .active {
-  color: #B8405E;
+  color: #d45575;
 }
 
 i {
@@ -95,7 +99,7 @@ i {
   margin: 8px;
 }
 .P-slides__navigation--dot.active {
-  background-color: #B8405E;
+  background-color: #d45575;
 }
 .P-slides__content {
   position: absolute;
