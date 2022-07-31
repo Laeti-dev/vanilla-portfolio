@@ -1,3 +1,3 @@
 import { toggleActive } from "./toggleActive";
 
-toggleActive();
+console.log("hello world")
