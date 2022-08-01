@@ -7,7 +7,7 @@ easyScrollDots({
 
 
 const navDots = document.querySelectorAll('.scroll-indicator-controller > div')
-const links = document.querySelectorAll('.links-item')
+const links = document.querySelectorAll('.links-item > a')
 
 /* const about = links[0].innerText.toLowerCase()
 const projects = links[1].innerText.toLowerCase()
@@ -18,7 +18,9 @@ const contact = links[2].innerText.toLowerCase() */
 const activeLink = (value) => {
     links.forEach(link => {
         if(link.innerText.toLowerCase() == value){
-            console.log(link)
+            link.classList.add('active-link')
+        } else {
+            link.classList.remove('active-link')
         }
     })
 }
