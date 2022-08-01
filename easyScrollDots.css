@@ -127,8 +127,8 @@
     height:20px;
     position:relative;
     border-radius:50%;
-    border:1px solid #d45575;
-    background:rgba(0,0,0,.25);
+    border:1px solid #476072;
+    background:#476072;
     margin:0 0 10px 0;
     cursor:pointer;
     transition:background .4s ease;
