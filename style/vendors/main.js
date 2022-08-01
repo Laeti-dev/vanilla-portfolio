@@ -8,11 +8,14 @@ const isInViewport = (e) => {
     );
 }
 
-const section = document.querySelector('#about')
+const section = document.getElementById('about')
 const links = document.querySelector('.links-item')
 
 document.addEventListener('scroll', function() {
-    if (isInViewport(section)) {
-        return(console.log('yes'))
-}})
+    if (isInViewport(section) === true) {
+        links.classList.add('active')
+    } {
+        passive: true
+    }
+})
 

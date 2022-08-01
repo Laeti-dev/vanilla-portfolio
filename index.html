@@ -17,12 +17,13 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
         <!-- devicons -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-
+        <!-- Easy scroll dots -->
+        <link rel="stylesheet" type="text/css" href="./easyScrollDots.css" />
     </head>
     
     <body>
         <div class="container">
-            <nav class="P-navbar">
+            <nav id="navbar" class="P-navbar">
                 <div class="P-navbar__logo">
                     <a href="#base">Laeti-dev</a>
                 </div>
@@ -42,16 +43,16 @@
                 </div>
             </nav>
             <div class="P-slides">
-                <div class="P-slides__navigation">
+                <!-- <div class="P-slides__navigation">
                     <div class="P-slides__navigation--dot active"></div>
-                    <!--  <div class="P-slides__navigation--dot"></div> -->
                     <div class="P-slides__navigation--dot"></div>
                     <div class="P-slides__navigation--dot"></div>
                     <div class="P-slides__navigation--dot"></div>
                     <div class="P-slides__navigation--dot"></div>
-                </div>
+                    <div class="P-slides__navigation--dot"></div>
+                </div> -->
                 <div class="P-slides__content">
-                    <div id="base" class="P-slides__content--track section">
+                    <div id="welcome" class="P-slides__content--track section scroll-indicator" data-scroll-indicator-title="welcome">
                         <h1>Hello, I'm a Laeti</h1>
                         <h2>A full-stack developper</h2>
                         <p>Graduated from Le Wagon Tokyo</p>
@@ -73,7 +74,7 @@
                             <i class="devicon-rspec-original-wordmark"></i>                                                                                                                                               
                         </div>
                     </div>
-                    <div id="about" class="P-slides__content--track section" > 
+                    <div id="about" class="P-slides__content--track section scroll-indicator" data-scroll-indicator-title="about" > 
                         <h1>About</h1>
                         <div class="P-slides__content--title-bar"></div>
                         <div class="P-slides__content--track--about section">
@@ -83,14 +84,14 @@
                         </div>                            
                     </div>
 
-                    <!-- <div id="skills" class="P-slides__content--skills section">
+                    <!-- <div id="skills" class="P-slides__content--skills section" data-scroll-indicator-title="Hello World">
                         <h1>Stacks</h1>
                         <div class="P-slides__content--title-bar"></div>
                         <div class="stacks-logo">
                             <img src="./style/img/rails.png" alt="RoR">
                         </div>
                     </div> -->
-                    <div id="projects" class="P-slides__content--track section">
+                    <div id="projects" class="P-slides__content--track section scroll-indicator" data-scroll-indicator-title="projects">
                         <h1>Projects</h1>
                         <div class="P-slides__content--title-bar"></div>
                         <div>
@@ -100,7 +101,7 @@
                             <div class="P-slide__project"></div>
                         </div>
                     </div>
-                    <div id="contact" class="P-slides__content--track section">
+                    <div id="contact" class="P-slides__content--track section scroll-indicator" data-scroll-indicator-title="contact">
                         <h1>Contact</h1>
                         <div class="P-slides__content--title-bar"></div>
                         <div></div>
@@ -108,7 +109,15 @@
                 </div>
             </div>
         </div>
-
+        <script type="text/javascript" src="./style/vendors/easyScrollDots.min.js"></script>
         <script type="text/javascript" src="./style/vendors/main.js"></script>
+        <script>
+            easyScrollDots({
+                'fixedNav': true,
+                'fixedNavId': 'nvbar',
+                'fixedNavUpward': false,
+                'offset': 56
+                });
+        </script>
     </body>
 </html>
