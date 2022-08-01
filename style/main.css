@@ -237,19 +237,21 @@ i {
   flex-direction: row;
   justify-content: space-between;
   margin: auto;
+  width: 900px;
 }
 .P-slides__content--track--about p {
-  width: 50%;
   margin: auto;
+  width: 50%;
   text-align: justify;
   line-height: 40px;
 }
 .P-slides__content--track--about img {
   margin: auto;
+  width: 30%;
 }
 
 .profile {
-  width: 200px;
+  width: 100px;
   height: 200px;
   border-radius: 16px;
 }
