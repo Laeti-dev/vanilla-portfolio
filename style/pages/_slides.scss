@@ -54,7 +54,9 @@
     flex: 1 0 100%;
 
     >p {
-        margin-top: 48px;
+        margin-top: 74px;
+        font-family: $font-main;
+        font-style: italic;
     }
 }
 
@@ -88,7 +90,7 @@
     border-radius: 16px;
 }
 
-.P-slides__content--title-bar {
+.P-slides__content--title-underline {
     background: $color-nav;
     height: 4px;
     width: 80px;

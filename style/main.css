@@ -221,7 +221,9 @@ i {
   flex: 1 0 100%;
 }
 .section > p {
-  margin-top: 48px;
+  margin-top: 74px;
+  font-family: "roboto", sans-serif;
+  font-style: italic;
 }
 
 .lewagon {
@@ -252,7 +254,7 @@ i {
   border-radius: 16px;
 }
 
-.P-slides__content--title-bar {
+.P-slides__content--title-underline {
   background: #334257;
   height: 4px;
   width: 80px;
