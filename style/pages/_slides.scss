@@ -5,6 +5,7 @@
     overflow: hidden;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     color: $color-nav;
 
     &__navigation {

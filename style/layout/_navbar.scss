@@ -16,6 +16,10 @@
         flex-basis: 25%;
         align-items: center;
         margin-left: 16px;
+        > a {
+            font-family: 'Shadows Into Light', cursive;
+            font-size: 1.5rem;
+        }
     }
 }
 
@@ -29,7 +33,7 @@ ul {
     li {
         margin-right: 16px;
         padding-right: 24px;
-        font-weight: 700;
+        font-weight: 400;
         transition: background 0.4s ease;
         will-change: transition;
 
