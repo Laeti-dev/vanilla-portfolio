@@ -11,7 +11,7 @@ body {
 }
 
 * {
-  font-family: "poppins", sans-serif;
+  font-family: "roboto", sans-serif;
   font-size: 1.2rem;
 }
 
@@ -178,7 +178,6 @@ i {
   overflow: hidden;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   color: #334257;
 }
 .P-slides__navigation {
@@ -221,10 +220,13 @@ i {
   padding-top: 56px;
   flex: 1 0 100%;
 }
+.section > p {
+  margin-top: 48px;
+}
 
 .lewagon {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border-radius: 16px;
 }
 
