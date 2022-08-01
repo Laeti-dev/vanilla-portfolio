@@ -9,12 +9,20 @@ easyScrollDots({
 const navDots = document.querySelectorAll('.scroll-indicator-controller > div')
 const links = document.querySelectorAll('.links-item')
 
-navDots.forEach(dot => {
+
+
+document.addEventListener('scroll', () => {
+    navDots.forEach(dot => {
         if(dot.classList.contains('active') == true){
+        let nodeValue = dot.attributes[1].nodeValue
+        return nodeValue
+        }
+    });
+    
+})
 
-        return console.log(dot.attributes[1].name)
+links.forEach(link => {
+    if(link.innerText == `'${nodeValue}'`){
+        console.log(link)
     }
-}
-)
-
-
+})
