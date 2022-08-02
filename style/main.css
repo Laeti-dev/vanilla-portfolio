@@ -127,6 +127,22 @@ a:hover {
     transition: opacity 0.4s ease;
   }
 }
+.P-slides__content--contact-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.P-slides__content--contact-info > i {
+  border-radius: 50%;
+  background-color: hwb(204 36% 12%);
+  font-size: 2rem;
+  width: 64px;
+  height: 64px;
+  margin: auto;
+  align-self: center;
+}
+
 .P-navbar {
   display: flex;
   flex-direction: row;

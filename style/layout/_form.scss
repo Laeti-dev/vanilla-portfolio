@@ -1,0 +1,19 @@
+@import "../utils/variables";
+
+.P-slides__content--contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    >i {
+        border-radius: 50%;
+        background-color: $color-lightfont;
+        font-size: 2rem;
+        width: 64px;
+        height: 64px;
+        margin: auto;
+        align-self: center;
+    }
+}
+
