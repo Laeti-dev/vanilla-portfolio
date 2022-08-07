@@ -31,6 +31,12 @@ a:hover {
   color: #d45575;
 }
 
+button {
+  width: 50%;
+  margin: auto;
+  color: hwb(204 36% 12%);
+}
+
 .devicons {
   margin: 64px;
 }
