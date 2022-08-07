@@ -166,6 +166,20 @@ a:hover {
   width: auto;
 }
 
+.P-slides__content--contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 90%;
+  margin: auto;
+  padding: 56px;
+}
+
+textarea {
+  width: 100%;
+  height: 160px;
+}
+
 .P-navbar {
   display: flex;
   flex-direction: row;
@@ -221,6 +235,8 @@ i {
 }
 .P-slides__navigation {
   width: 48px;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
   max-height: fit-content;
   position: fixed;
   padding-top: 30%;
@@ -293,6 +309,4 @@ i {
   width: 100px;
   height: 200px;
   border-radius: 16px;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

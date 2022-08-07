@@ -6,12 +6,11 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    }
+}
 
 .P-slides__content--contact--info {
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .icon {
@@ -33,4 +32,16 @@
     }
 }
 
+.P-slides__content--contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 90%;
+  margin: auto;
+  padding: 56px;
+}
 
+textarea {
+  width: 100%;
+  height: 160px;
+}
