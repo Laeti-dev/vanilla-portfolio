@@ -1,4 +1,5 @@
 @import "../utils/variables";
+@import "../utils/mixin";
 
 .P-slides {
     width: auto;
@@ -23,11 +24,11 @@
             background-color: $color-darkextra;
             margin: 8px;
         }
-    
 
-        
+
+
     }
-    
+
     &__content {
         position: absolute;
         display: flex;
@@ -41,7 +42,7 @@
         scroll-behavior: smooth;
         height: calc(100vh - 2rem);
         width: 100%;
-    } 
+    }
 }
 
 .section {
@@ -72,6 +73,11 @@
     justify-content: space-between;
     margin: auto;
     width: 900px;
+
+    @include for-size(phone) {
+      display: inline;
+    }
+
     p {
         margin: auto;
         width: 50%;

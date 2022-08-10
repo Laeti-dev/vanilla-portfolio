@@ -7,7 +7,6 @@
     align-items: center;
     position: fixed;
     z-index: 2;
-    width: 100vw;
     top: 0;
     height: 48px;
     background-color: $color-nav;
@@ -16,9 +15,17 @@
         flex-basis: 25%;
         align-items: center;
         margin-left: 16px;
+        @include for-size(phone) {
+          margin-left: 12px;
+        }
+
+
         > a {
             font-family: $font-logo;
             font-size: 1.5rem;
+            @include for-size(phone) {
+                font-size: ;
+              }
         }
     }
 }
@@ -37,6 +44,10 @@ ul {
         transition: background 0.4s ease;
         will-change: transition;
 
+        @include for-size(phone) {
+          margin-left: 0;
+        }
+
         > a {
             &.active-link {
                 color: $color-active;
@@ -48,4 +59,7 @@ ul {
 
 i {
     font-size: 2rem;
+    @include for-size(phone) {
+      font-size: 1rem;
+    }
 }

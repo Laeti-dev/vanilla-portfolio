@@ -1,9 +1,11 @@
 @import "../utils/variables";
+@import "../utils/mixin";
 
 body {
     width: 100%;
     margin: 0;
     padding: 0;
+
 }
 
 .container {
@@ -15,6 +17,9 @@ body {
 * {
     font-family: $font-main;
     font-size: 1.2rem;
+    @include for-size(phone) {
+      font-size: 1rem;
+    }
 }
 
 h1 {
