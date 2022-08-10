@@ -9,6 +9,7 @@
     z-index: 2;
     top: 0;
     height: 48px;
+    width: 100%;
     background-color: $color-nav;
     color: $color-lightfont;
     &__logo {
@@ -24,7 +25,7 @@
             font-family: $font-logo;
             font-size: 1.5rem;
             @include for-size(phone) {
-                font-size: ;
+                font-size: 1rem;
               }
         }
     }
@@ -37,6 +38,9 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    @include for-size(phone) {
+      justify-content: space-evenly;
+    }
     li {
         margin-right: 16px;
         padding-right: 24px;
@@ -45,7 +49,9 @@ ul {
         will-change: transition;
 
         @include for-size(phone) {
-          margin-left: 0;
+          margin-left: 02px;
+          margin-right: 8px;
+          padding-right: 8px;
         }
 
         > a {
@@ -60,6 +66,6 @@ ul {
 i {
     font-size: 2rem;
     @include for-size(phone) {
-      font-size: 1rem;
+      font-size: 1.8rem;
     }
 }
