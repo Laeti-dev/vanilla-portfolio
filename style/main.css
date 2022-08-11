@@ -239,7 +239,7 @@ i {
 }
 
 .P-slides {
-  width: auto;
+  width: 90vw;
   overflow: hidden;
   display: flex;
   flex-direction: row;
@@ -260,7 +260,7 @@ i {
 }
 
 .section {
-  padding-left: 24px;
+  width: 100vw;
   text-align: center;
   align-self: center;
   padding-top: 32px;
@@ -301,6 +301,17 @@ i {
     display: inline;
     line-height: 32px;
   }
+}
+.P-slides__content--project {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.P-slide__project > video {
+  width: 344px;
+  border-radius: 16px;
+  box-shadow: 1px 2px grey;
 }
 
 .profile {
