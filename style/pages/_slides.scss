@@ -41,14 +41,13 @@
         z-index: 1;
         scroll-behavior: smooth;
         height: calc(100vh - 2rem);
-        width: 100%;
     }
 }
 
 .section {
     height: 100%;
     width: 100%;
-    margin-left: 56px;
+    padding-left: 24px;
     text-align: center;
     align-self: center;
     padding-top: 16px;
@@ -58,6 +57,10 @@
         margin-top: 74px;
         font-family: $font-main;
         font-style: italic;
+
+        @include for-size(phone){
+          font-style: normal;
+        }
     }
 }
 
@@ -72,17 +75,20 @@
     flex-direction: row;
     justify-content: space-between;
     margin: auto;
-    width: 900px;
+    padding-top: 56px;
+    width: 100%;
 
     @include for-size(phone) {
       display: inline;
     }
 
     p {
-        margin: auto;
-        width: 50%;
+        margin: 24px;
         text-align: justify;
         line-height: 40px;
+        @include for-size(phone) {
+          line-height: 32px;
+        }
     }
 
     img {

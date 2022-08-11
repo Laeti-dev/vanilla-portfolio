@@ -1,5 +1,5 @@
 body {
-  width: 100%;
+  width: 70vw;
   margin: 0;
   padding: 0;
 }
@@ -40,6 +40,11 @@ button {
   width: 50%;
   margin: auto;
   color: hwb(204 36% 12%);
+  border-radius: 16px;
+  height: 2rem;
+  width: 80px;
+  border: 1px solid gray;
+  box-shadow: 1px 1px gray;
 }
 
 .devicons {
@@ -181,7 +186,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  max-width: 90%;
+  width: 50%;
   margin: auto;
   padding: 56px;
 }
@@ -301,13 +306,12 @@ i {
   z-index: 1;
   scroll-behavior: smooth;
   height: calc(100vh - 2rem);
-  width: 100%;
 }
 
 .section {
   height: 100%;
   width: 100%;
-  margin-left: 56px;
+  padding-left: 24px;
   text-align: center;
   align-self: center;
   padding-top: 16px;
@@ -317,6 +321,11 @@ i {
   margin-top: 74px;
   font-family: "roboto", sans-serif;
   font-style: italic;
+}
+@media (max-width: 599px) {
+  .section > p {
+    font-style: normal;
+  }
 }
 
 .lewagon {
@@ -330,7 +339,8 @@ i {
   flex-direction: row;
   justify-content: space-between;
   margin: auto;
-  width: 900px;
+  padding-top: 56px;
+  width: 100%;
 }
 @media (max-width: 599px) {
   .P-slides__content--track--about {
@@ -338,10 +348,14 @@ i {
   }
 }
 .P-slides__content--track--about p {
-  margin: auto;
-  width: 50%;
+  margin: 24px;
   text-align: justify;
   line-height: 40px;
+}
+@media (max-width: 599px) {
+  .P-slides__content--track--about p {
+    line-height: 32px;
+  }
 }
 .P-slides__content--track--about img {
   margin: auto;
