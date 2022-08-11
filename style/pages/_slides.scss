@@ -8,27 +8,6 @@
     flex-direction: row;
     color: $color-nav;
 
-    &__navigation {
-        width: 48px;
-        max-height: fit-content;
-        position: fixed;
-        padding-top: 30%;
-        display: inline-block;
-        z-index: 2;
-        background-color: transparent;
-
-        &--dot {
-            width: 16px;
-            height: 16px;
-            border-radius: 50%;
-            background-color: $color-darkextra;
-            margin: 8px;
-        }
-
-
-
-    }
-
     &__content {
         position: absolute;
         display: flex;
@@ -45,18 +24,20 @@
 }
 
 .section {
-    height: 100%;
-    width: 100%;
     padding-left: 24px;
     text-align: center;
     align-self: center;
-    padding-top: 16px;
+    padding-top: 32px;
     flex: 1 0 100%;
 
     >p {
         margin-top: 74px;
         font-family: $font-main;
-        font-style: italic;
+        width: 50%;
+        margin: auto;
+        padding: 24px 24px;
+        line-height: 40px;
+        text-align: center;
 
         @include for-size(phone){
           font-style: normal;
@@ -70,30 +51,19 @@
     border-radius: 16px;
 }
 
-.P-slides__content--track--about {
+.P-slides__content--about {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin: auto;
     padding-top: 56px;
-    width: 100%;
+    letter-spacing: 0.1rem;
+
+    >p {
+      text-align: justify;
+    }
 
     @include for-size(phone) {
       display: inline;
-    }
-
-    p {
-        margin: 24px;
-        text-align: justify;
-        line-height: 40px;
-        @include for-size(phone) {
-          line-height: 32px;
-        }
-    }
-
-    img {
-        margin: auto;
-        width: 30%;
+      line-height: 32px;
     }
 }
 
@@ -101,4 +71,6 @@
     width: 100px;
     height: 200px;
     border-radius: 16px;
+    margin: auto;
+    width: 30%;
 }

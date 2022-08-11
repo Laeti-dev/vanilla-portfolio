@@ -15,7 +15,7 @@
     transform: translate(0, -50%);
     left: 10px;
     z-index: 999;
-    
+
     &.indi-mobile > div span {
         display: none;
     }
@@ -51,7 +51,7 @@
             transform: translateY(-50%) translateX(10px);
             transition: all 0.4s ease;
             will-change: transition;
-            
+
             @media (hover: none) {
                 display: none;
             }

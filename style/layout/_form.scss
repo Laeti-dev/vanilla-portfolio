@@ -1,44 +1,11 @@
 @import "../utils/variables";
 
-
-.P-slides__content--contact-informations {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.P-slides__content--contact--info {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.icon {
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    background: $color-lightfont;
-    color: white;
-    margin: 0 auto;
-    margin-bottom: 20px;
-
-    >span {
-        font-size: 0.8rem;
-        &::before {
-            display: inline-block;
-            padding-top: 18px;
-            width: auto;
-        }
-    }
-}
-
 .P-slides__content--contact-form {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  width: 50%;
+  width: 100%;
   margin: auto;
-  padding: 56px;
 }
 
 textarea {
