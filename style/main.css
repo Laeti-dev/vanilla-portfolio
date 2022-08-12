@@ -7,7 +7,7 @@ body {
 .container {
   margin: 0;
   padding: 0;
-  background-color: #EEEEEE;
+  background-color: #f7ebec;
 }
 
 * {
@@ -29,17 +29,17 @@ h1 {
 
 a {
   text-decoration: none;
-  color: hwb(204 36% 12%);
+  color: #809bce;
   transition: color 0.5s ease-out;
 }
 a:hover {
-  color: #d45575;
+  color: #ddbdd5;
 }
 
 button {
   width: 50%;
   margin: auto;
-  color: hwb(204 36% 12%);
+  color: #809bce;
   border-radius: 16px;
   height: 2rem;
   width: 80px;
@@ -89,15 +89,15 @@ button {
   height: 20px;
   position: relative;
   border-radius: 50%;
-  border: 1px solid #476072;
-  background: #476072;
+  border: 1px solid #809bce;
+  background: #809bce;
   margin: 0 0 10px 0;
   cursor: pointer;
   transition: background 0.4s ease;
   will-change: transition;
 }
 .scroll-indicator-controller > div span {
-  color: #d45575;
+  color: #ddbdd5;
   position: absolute;
   left: calc(100% + 8px);
   white-space: nowrap;
@@ -134,8 +134,8 @@ button {
   }
 }
 .scroll-indicator-controller > div.active {
-  background: #d45575;
-  border-color: #d45575;
+  background: #ddbdd5;
+  border-color: #ddbdd5;
 }
 
 @supports (-ms-ime-align: auto) {
@@ -144,7 +144,7 @@ button {
   }
 }
 .P-slides__content--title-underline {
-  background: #334257;
+  background: #736b92;
   height: 4px;
   width: 80px;
   border-radius: 8px;
@@ -152,16 +152,19 @@ button {
   margin-bottom: 24px;
 }
 
+footer {
+  text-align: center;
+}
+
 .P-slides__content--contact-form {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  width: 75%;
-  margin: auto;
+  font-size: 1rem;
 }
 
 textarea {
-  width: 100%;
+  width: 360px;
   height: 160px;
 }
 
@@ -175,8 +178,14 @@ textarea {
   top: 0;
   height: 48px;
   width: 100%;
-  background-color: #334257;
-  color: hwb(204 36% 12%);
+  background-color: #736b92;
+  color: #809bce;
+}
+@media (max-width: 599px) {
+  .P-navbar {
+    height: 56px;
+    position: fixed;
+  }
 }
 .P-navbar__logo {
   flex-basis: 25%;
@@ -194,14 +203,14 @@ textarea {
 }
 @media (max-width: 599px) {
   .P-navbar__logo > a {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 
 ul {
   list-style: none;
   flex-basis: 25%;
-  color: hwb(204 36% 12%);
+  color: #809bce;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -226,7 +235,7 @@ ul li {
   }
 }
 ul li > a.active-link {
-  color: #d45575;
+  color: #ddbdd5;
 }
 
 i {
@@ -243,7 +252,7 @@ i {
   overflow: hidden;
   display: flex;
   flex-direction: row;
-  color: #334257;
+  color: #736b92;
 }
 .P-slides__content {
   position: absolute;
@@ -260,10 +269,9 @@ i {
 }
 
 .section {
-  width: 100vw;
   text-align: center;
   align-self: center;
-  padding-top: 32px;
+  padding-top: 48px;
   flex: 1 0 100%;
 }
 .section > p {
@@ -278,6 +286,10 @@ i {
 @media (max-width: 599px) {
   .section > p {
     font-style: normal;
+    line-height: 24px;
+    letter-spacing: 1px;
+    width: 75%;
+    padding-top: 56px;
   }
 }
 
@@ -287,10 +299,14 @@ i {
   border-radius: 16px;
 }
 
+.zoom {
+  z-index: 999;
+}
+
 .P-slides__content--about {
   display: flex;
   flex-direction: row;
-  padding-top: 56px;
+  padding-top: 24px;
   letter-spacing: 0.1rem;
 }
 .P-slides__content--about > p {
@@ -299,7 +315,19 @@ i {
 @media (max-width: 599px) {
   .P-slides__content--about {
     display: inline;
-    line-height: 32px;
+    margin-top: 40px;
+  }
+}
+
+.profile {
+  width: 360px;
+  border-radius: 16px;
+  margin: auto;
+}
+@media (max-width: 599px) {
+  .profile {
+    width: 304px;
+    margin-top: 40px;
   }
 }
 
@@ -309,26 +337,20 @@ i {
   flex-direction: row;
   border-radius: 16px;
 }
+@media (max-width: 599px) {
+  .P-slide__project {
+    flex-direction: column;
+  }
+}
 .P-slide__project p {
   font-size: 0.8rem;
   text-align: justify;
   padding: 16px;
 }
-.P-slide__project > video, .P-slide__project img {
+.P-slide__project > video,
+.P-slide__project img {
   border-radius: 16px;
 }
 .P-slide__project > .carearound {
   margin: 0 128px;
-}
-
-.profile {
-  width: 100px;
-  height: 200px;
-  border-radius: 16px;
-  margin: auto;
-  width: 30%;
-}
-
-.zoom {
-  z-index: 999;
 }/*# sourceMappingURL=main.css.map */

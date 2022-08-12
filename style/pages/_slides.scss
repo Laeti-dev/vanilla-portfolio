@@ -24,10 +24,9 @@
 }
 
 .section {
-    width: 100vw;
     text-align: center;
     align-self: center;
-    padding-top: 32px;
+    padding-top: 48px;
     flex: 1 0 100%;
 
     >p {
@@ -41,6 +40,10 @@
 
         @include for-size(phone){
           font-style: normal;
+          line-height: 24px;
+          letter-spacing: 1px;
+          width: 75%;
+          padding-top: 56px;
         }
     }
 }
@@ -49,52 +52,6 @@
     width: 100px;
     height: 100px;
     border-radius: 16px;
-}
-
-.P-slides__content {
-  &--about{
-    display: flex;
-    flex-direction: row;
-    padding-top: 56px;
-    letter-spacing: 0.1rem;
-
-    >p {
-      text-align: justify;
-    }
-
-    @include for-size(phone) {
-      display: inline;
-      line-height: 32px;
-    }
-  }
-}
-
-.P-slide__project {
-  margin: 40px;
-  display: flex;
-  flex-direction: row;
-  border-radius: 16px;
-
-  p {
-    font-size: 0.8rem;
-    text-align: justify;
-    padding: 16px;
-  }
-  >video, img {
-    border-radius: 16px;
-  }
-
-  >.carearound{
-    margin: 0 128px;
-  }
-}
-
-.profile {
-    width: 100px;
-    height: 200px;
-    border-radius: 16px;
-    margin: auto;
-    width: 30%;
 }
 
 .zoom {

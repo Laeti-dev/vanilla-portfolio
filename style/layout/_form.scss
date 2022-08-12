@@ -1,14 +1,14 @@
 @import "../utils/variables";
+@import "../utils/mixin";
 
 .P-slides__content--contact-form {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  width: 75%;
-  margin: auto;
+  font-size: 1rem;
 }
 
 textarea {
-  width: 100%;
+  width: 360px;
   height: 160px;
 }
