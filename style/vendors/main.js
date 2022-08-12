@@ -40,3 +40,5 @@ const form = document.querySelector('button')
 form.addEventListener('click', () => {
   alert("Thank you ! You should receive a reply within 24h.")
 })
+
+// projects-hover

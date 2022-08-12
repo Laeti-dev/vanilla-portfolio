@@ -67,19 +67,25 @@
       line-height: 32px;
     }
   }
-
-  &--project {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-  }
 }
 
 .P-slide__project {
-  >video {
-    width: 344px;
+  margin: 40px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 16px;
+
+  p {
+    font-size: 0.8rem;
+    text-align: justify;
+    padding: 16px;
+  }
+  >video, img {
     border-radius: 16px;
-    box-shadow: 1px 2px grey;
+  }
+
+  >.carearound{
+    margin: 0 128px;
   }
 }
 
@@ -89,4 +95,9 @@
     border-radius: 16px;
     margin: auto;
     width: 30%;
+}
+
+.zoom {
+  z-index: 999;
+
 }

@@ -156,7 +156,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  width: 100%;
+  width: 75%;
   margin: auto;
 }
 
@@ -302,16 +302,23 @@ i {
     line-height: 32px;
   }
 }
-.P-slides__content--project {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-}
 
-.P-slide__project > video {
-  width: 344px;
+.P-slide__project {
+  margin: 40px;
+  display: flex;
+  flex-direction: row;
   border-radius: 16px;
-  box-shadow: 1px 2px grey;
+}
+.P-slide__project p {
+  font-size: 0.8rem;
+  text-align: justify;
+  padding: 16px;
+}
+.P-slide__project > video, .P-slide__project img {
+  border-radius: 16px;
+}
+.P-slide__project > .carearound {
+  margin: 0 128px;
 }
 
 .profile {
@@ -320,4 +327,8 @@ i {
   border-radius: 16px;
   margin: auto;
   width: 30%;
+}
+
+.zoom {
+  z-index: 999;
 }/*# sourceMappingURL=main.css.map */
