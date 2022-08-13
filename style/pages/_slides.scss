@@ -1,6 +1,14 @@
 @import "../utils/variables";
 @import "../utils/mixin";
 
+
+#welcome {
+  padding-top: 46px;
+
+  @include for-size(phone) {
+    padding-top: 72px;
+  }
+}
 .P-slides {
     width: 90vw;
     overflow: hidden;
@@ -26,8 +34,12 @@
 .section {
     text-align: center;
     align-self: center;
-    padding-top: 48px;
+    margin-bottom: 56px;
     flex: 1 0 100%;
+
+    @include for-size(phone){
+      flex: 0;
+    }
 
     >p {
         margin-top: 74px;
@@ -43,7 +55,6 @@
           line-height: 24px;
           letter-spacing: 1px;
           width: 75%;
-          padding-top: 56px;
         }
     }
 }
