@@ -1,0 +1,29 @@
+@import "../utils/variables";
+@import "../utils/mixin";
+
+.P-slide__project {
+  margin: 48px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 16px;
+
+  @include for-size(phone) {
+    flex-direction: column;
+  }
+
+  p {
+    text-align: justify;
+    padding: 16px;
+    letter-spacing: 1px;
+    line-height: 24px;
+  }
+
+  >video,
+  img {
+    border-radius: 16px;
+  }
+
+  >.carearound {
+    margin: 0 128px;
+  }
+}

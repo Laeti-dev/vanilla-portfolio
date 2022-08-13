@@ -1,0 +1,31 @@
+@import "../utils/variables";
+@import "../utils/mixin";
+
+.P-slides__content {
+  &--about {
+    display: flex;
+    flex-direction: row;
+    padding-top: 24px;
+    letter-spacing: 0.1rem;
+
+    >p {
+      text-align: justify;
+    }
+
+    @include for-size(phone) {
+      display: inline;
+      margin-top: 40px;
+    }
+  }
+}
+
+.profile {
+  width: 360px;
+  border-radius: 16px;
+  margin: auto;
+
+  @include for-size(phone) {
+    width: 304px;
+    margin-top: 40px;
+  }
+}
