@@ -85,33 +85,43 @@
           <div id="projects" class="P-slides__content--track section scroll-indicator" data-scroll-indicator-title="projects">
             <h1>Projects</h1>
             <div class="P-slides__content--title-underline"></div>
+            <!-- projects container -->
             <div class="P-slides__content--project">
+              <!-- first -->
               <div class="P-slide__project">
-                <img src="./style/img/jedi_master_mp4_AdobeExpress.gif" alt="class finder app">
-                <div>
+                <div class="P-slide__project--media">
+                  <!-- <img src="./style/img/jedi_master_mp4_AdobeExpress.gif" alt="class finder app"> -->
+                  <video autoplay loop width="344" class="carearound">
+                    <source src="./style/videos/jedi_master.mp4.mp4" type="video/mp4">
+                    <source src="./style/videos/jedi_master.webmhd.webm" type="video/webm">
+                  </video>
+                </div>
+                <div class="P-slide__project--details">
                   <h2>Master jedi</h2>
                   <p>A web application build on ruby on rails with an exagerated design and javascript effect.
                   </p>
                 </div>
               </div>
+              <!-- second -->
               <div class="P-slide__project">
                 <!-- <img src="./style/img/care_around_AdobeExpress.gif" alt="carearound" style="width: 88px;"> -->
-                <video
-                  autoplay
-                  loop
-                  width="88"
-                  class="carearound">
-                  <source
-                  src="./style/videos/care_around.mp4.mp4"
-                  type="video/mp4">
-                  <source
-                  src="./style/videos/care_around.webmhd.webm"
-                  type="video/webm">
-                  <source
-                  src="./style/videos/care_around.mov"
-                  type="video/mov">
-                </video>
-                <div>
+                <div class="P-slide__project--media">
+                  <video
+                    autoplay
+                    loop
+                    width="88">
+                    <source
+                    src="./style/videos/care_around.mp4.mp4"
+                    type="video/mp4">
+                    <source
+                    src="./style/videos/care_around.webmhd.webm"
+                    type="video/webm">
+                    <source
+                    src="./style/videos/care_around.mov"
+                    type="video/mov">
+                  </video>
+                </div>
+                <div class="P-slide__project--details">
                   <h2>Carearound</h2>
                   <p>A mobile application using Optical Character Recognition (Google cloud OCR API) on beauty product and finding a match in a Japanese product database,built using scrapping and Kimurai gem allowing infinite scroll and translated from japanese to english through DEEPL API.
                   </p>
@@ -122,7 +132,7 @@
                   src="./style/img/masaki.png"
                   alt="hairstyliste website"
                   width="344">
-                <div>
+                <div class="P-slide__project--details">
                   <h2>Hairstylist portfolio</h2>
                   <p>Responsive portfolio for freelance hairstylist. Build using javascript and typed.js,<a href="https://laeti-dev.github.io/ikusawa-masaki/">Check it here</a>
                   </p>

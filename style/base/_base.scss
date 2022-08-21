@@ -37,3 +37,18 @@ a {
         color: $color-active;
     }
 }
+
+p {
+  margin-top: 74px;
+  font-family: $font-main;
+  margin: auto;
+  padding: 24px 24px;
+  line-height: 40px;
+  text-align: center;
+
+    @include for-size(phone) {
+      font-style: normal;
+      line-height: 24px;
+      letter-spacing: 1px;
+    }
+}

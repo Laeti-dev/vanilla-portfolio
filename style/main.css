@@ -2,7 +2,7 @@ body {
   width: 80vw;
   margin: 0;
   padding: 0;
-  background-color: #D9D3CC;
+  background-color: #EDF2F6;
 }
 
 .container {
@@ -29,22 +29,38 @@ h1 {
 
 a {
   text-decoration: none;
-  color: #D9D3CC;
+  color: #EDF2F6;
   transition: color 0.5s ease-out;
 }
 a:hover {
-  color: #BF9E80;
+  color: #FF5656;
+}
+
+p {
+  margin-top: 74px;
+  font-family: "roboto", sans-serif;
+  margin: auto;
+  padding: 24px 24px;
+  line-height: 40px;
+  text-align: center;
+}
+@media (max-width: 599px) {
+  p {
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: 1px;
+  }
 }
 
 button {
   width: 50%;
   margin: auto;
-  color: #A9BF99;
+  color: #6A7EFC;
   border-radius: 16px;
   height: 2rem;
   width: 80px;
-  border: 1px solid #A9BF99;
-  box-shadow: 1px 1px #A9BF99;
+  border: 1px solid #6A7EFC;
+  box-shadow: 1px 1px #6A7EFC;
   cursor: pointer;
 }
 
@@ -90,15 +106,15 @@ button {
   height: 20px;
   position: relative;
   border-radius: 50%;
-  border: 1px solid #A9BF99;
-  background: #A9BF99;
+  border: 1px solid #6A7EFC;
+  background: #6A7EFC;
   margin: 0 0 10px 0;
   cursor: pointer;
   transition: background 0.4s ease;
   will-change: transition;
 }
 .scroll-indicator-controller > div span {
-  color: #BF9E80;
+  color: #FF5656;
   position: absolute;
   left: calc(100% + 8px);
   white-space: nowrap;
@@ -135,8 +151,8 @@ button {
   }
 }
 .scroll-indicator-controller > div.active {
-  background: #BF9E80;
-  border-color: #BF9E80;
+  background: #FF5656;
+  border-color: #FF5656;
 }
 
 @supports (-ms-ime-align: auto) {
@@ -145,7 +161,7 @@ button {
   }
 }
 .P-slides__content--title-underline {
-  background: #0C1059;
+  background: #494953;
   height: 4px;
   width: 80px;
   border-radius: 8px;
@@ -179,7 +195,7 @@ textarea {
   top: 0;
   height: 48px;
   width: 100%;
-  background-color: #0C1059;
+  background-color: #494953;
 }
 @media (max-width: 599px) {
   .P-navbar {
@@ -210,7 +226,7 @@ textarea {
 ul {
   list-style: none;
   flex-basis: 25%;
-  color: #A9BF99;
+  color: #6A7EFC;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -235,7 +251,7 @@ ul li {
   }
 }
 ul li > a.active-link {
-  color: #BF9E80;
+  color: #FF5656;
 }
 
 i {
@@ -257,31 +273,23 @@ i {
 }
 
 .P-slides {
-  width: 90vw;
   overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  color: #0C1059;
+  color: #494953;
+  width: 90%;
 }
 .P-slides__content {
   position: absolute;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  /* margin-right: 56px;
-  top: 80px;
-  left: 56px; */
+  margin-left: 32px;
   z-index: 1;
   scroll-behavior: smooth;
-  height: calc(100vh - 2rem);
 }
 
 .section {
   text-align: center;
   align-self: center;
   margin-bottom: 56px;
-  flex: 1 0 100%;
 }
 @media (max-width: 599px) {
   .section {
@@ -310,10 +318,6 @@ i {
   width: 100px;
   height: 100px;
   border-radius: 16px;
-}
-
-.zoom {
-  z-index: 999;
 }
 
 .P-slides__content--about {
@@ -345,26 +349,26 @@ i {
 }
 
 .P-slide__project {
-  margin: 48px;
-  display: flex;
-  flex-direction: row;
-  border-radius: 16px;
+  margin: 32px;
+  padding: 16px;
+  display: inline-grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: #494953;
+  border-radius: 24px;
+  color: #EDF2F6;
 }
 @media (max-width: 599px) {
   .P-slide__project {
     flex-direction: column;
   }
 }
-.P-slide__project p {
+.P-slide__project--details p {
   text-align: justify;
-  padding: 16px;
   letter-spacing: 1px;
-  line-height: 24px;
+  line-height: 32px;
+  align-self: end;
 }
-.P-slide__project > video,
-.P-slide__project img {
-  border-radius: 16px;
-}
-.P-slide__project > .carearound {
-  margin: 0 128px;
+.P-slide__project--media {
+  flex-grow: 1;
+  align-self: center;
 }/*# sourceMappingURL=main.css.map */
