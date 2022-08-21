@@ -353,7 +353,7 @@ i {
   padding: 16px;
   display: inline-grid;
   grid-template-columns: 1fr 2fr;
-  background-color: #494953;
+  background-color: rgba(73, 73, 83, 0.5);
   border-radius: 24px;
   color: #EDF2F6;
 }

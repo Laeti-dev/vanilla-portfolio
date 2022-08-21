@@ -6,7 +6,7 @@
   padding: 16px;
   display: inline-grid;
   grid-template-columns: 1fr 2fr;
-  background-color: $color-nav;
+  background-color: rgba($color-nav, 0.5);
   border-radius: 24px;
   color: $color-background;
 
