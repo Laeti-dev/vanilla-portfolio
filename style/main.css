@@ -359,7 +359,7 @@ i {
 }
 @media (max-width: 599px) {
   .P-slide__project {
-    flex-direction: column;
+    display: block;
   }
 }
 .P-slide__project--details p {
