@@ -16,6 +16,15 @@
       display: inline;
       margin-top: 40px;
     }
+
+    @include for-size(tablet-portrait) {
+      display: inline;
+      margin-top: 40px;
+      > p {
+        width: 90%;
+      }
+    }
+
   }
 }
 

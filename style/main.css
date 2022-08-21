@@ -335,6 +335,15 @@ i {
     margin-top: 40px;
   }
 }
+@media (min-width: 600px) {
+  .P-slides__content--about {
+    display: inline;
+    margin-top: 40px;
+  }
+  .P-slides__content--about > p {
+    width: 90%;
+  }
+}
 
 .profile {
   width: 360px;
