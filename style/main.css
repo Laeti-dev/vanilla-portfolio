@@ -331,11 +331,11 @@ i {
 }
 @media (max-width: 599px) {
   .P-slides__content--about {
-    display: inline;
+    display: block;
     margin-top: 40px;
   }
 }
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   .P-slides__content--about {
     display: inline;
     margin-top: 40px;
