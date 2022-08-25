@@ -206,6 +206,7 @@ textarea {
   z-index: 2;
   top: 0;
   height: 48px;
+  width: 100%;
   background-color: #494953;
 }
 @media (max-width: 599px) {
