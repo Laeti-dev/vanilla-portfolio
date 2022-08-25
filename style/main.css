@@ -49,12 +49,12 @@ p {
 button {
   width: 50%;
   margin: auto;
-  color: #6A7EFC;
+  color: #3A6FA6;
   border-radius: 16px;
   height: 2rem;
   width: 80px;
-  border: 1px solid #6A7EFC;
-  box-shadow: 1px 1px #6A7EFC;
+  border: 1px solid #3A6FA6;
+  box-shadow: 1px 1px #3A6FA6;
   cursor: pointer;
 }
 
@@ -100,8 +100,8 @@ button {
   height: 20px;
   position: relative;
   border-radius: 50%;
-  border: 1px solid #6A7EFC;
-  background: #6A7EFC;
+  border: 1px solid #3A6FA6;
+  background: #3A6FA6;
   margin: 0 0 10px 0;
   cursor: pointer;
   transition: background 0.4s ease;
@@ -167,15 +167,23 @@ footer {
   text-align: center;
 }
 
+.P-slides__content--form {
+  border: 1px black solid;
+  border-radius: 24px;
+  box-shadow: 2px 2px 2px #3A6FA6;
+  width: 75%;
+  padding: 32px;
+}
+
 .P-slides__content--contact-form {
   display: flex;
   flex-direction: column;
   gap: 24px;
   font-size: 1rem;
+  max-width: 500px;
 }
 
 textarea {
-  width: 360px;
   height: 160px;
 }
 
@@ -220,7 +228,7 @@ textarea {
 ul {
   list-style: none;
   flex-basis: 25%;
-  color: #6A7EFC;
+  color: #3A6FA6;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -359,6 +367,7 @@ i {
 @media (max-width: 599px) {
   .P-slide__project {
     display: block;
+    width: 80%;
   }
 }
 .P-slide__project--details p {

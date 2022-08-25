@@ -6,12 +6,11 @@
   padding: 16px;
   display: inline-grid;
   grid-template-columns: 1fr 2fr;
-  // background-color: rgba($color-nav, 0.5);
-  // border-radius: 24px;
   color: $color-nav;
 
   @include for-size(phone) {
     display: block;
+    width: 80%;
   }
   &--details {
 
