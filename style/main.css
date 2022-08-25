@@ -154,6 +154,10 @@ button {
     transition: opacity 0.4s ease;
   }
 }
+hr {
+  width: 60%;
+}
+
 .P-slides__content--title-underline {
   background: #494953;
   height: 4px;
