@@ -11,16 +11,15 @@
 }
 
 .P-slides {
-  overflow: hidden;
+  // overflow: hidden;
   color: $color-nav;
-  width: 90%;
-
 
   &__content {
-    position: absolute;
+    margin: auto;
+    width: 90%;
+    // position: absolute;
     display: flex;
     flex-direction: column;
-    margin-left: 32px;
     // justify-content: space-between;
     z-index: 1;
     scroll-behavior: smooth;
