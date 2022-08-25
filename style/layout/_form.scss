@@ -19,3 +19,9 @@
 textarea {
   height: 160px;
 }
+
+button {
+  @include for-size(phone){
+  color: white;
+  }
+}
