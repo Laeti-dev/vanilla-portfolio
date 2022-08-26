@@ -208,6 +208,7 @@ textarea {
   height: 48px;
   width: 100%;
   background-color: #494953;
+  padding: 0 16px;
 }
 @media (max-width: 599px) {
   .P-navbar {
@@ -234,10 +235,12 @@ textarea {
     font-size: 0.9rem;
   }
 }
+.P-navbar__logo__links {
+  flex-basis: 25%;
+}
 
 ul {
   list-style: none;
-  flex-basis: 25%;
   color: #3A6FA6;
   display: flex;
   flex-direction: row;
@@ -260,6 +263,14 @@ ul li {
     margin-left: 2px;
     margin-right: 8px;
     padding-right: 8px;
+  }
+}
+ul li > a {
+  font-size: 1.5rem;
+}
+@media (max-width: 599px) {
+  ul li > a {
+    font-size: 1rem;
   }
 }
 ul li > a.active-link {

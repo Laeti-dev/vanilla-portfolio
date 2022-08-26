@@ -11,6 +11,7 @@
     height: 48px;
     width: 100%;
     background-color: $color-nav;
+    padding: 0 16px;
 
     @include for-size(phone) {
       height: 56px;
@@ -32,12 +33,15 @@
                 font-size: 0.9rem;
               }
         }
+
+      &__links {
+        flex-basis: 25%;
+      }
     }
 }
 
 ul {
     list-style: none;
-    flex-basis: 25%;
     color: $color-lightfont;
     display: flex;
     flex-direction: row;
@@ -61,6 +65,10 @@ ul {
         }
 
         > a {
+            font-size: 1.5rem;
+            @include for-size(phone){
+              font-size: 1rem;
+            }
             &.active-link {
                 color: $color-active;
             }
