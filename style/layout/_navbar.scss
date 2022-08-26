@@ -13,7 +13,7 @@
     background-color: $color-nav;
     padding: 0 16px;
 
-    @include for-size(phone) {
+    @include for-size(tablet-portrait) {
       height: 56px;
       position: fixed;
     }
@@ -22,14 +22,14 @@
         flex-basis: 25%;
         align-items: center;
         margin-left: 16px;
-        @include for-size(phone) {
+        @include for-size(tablet-portrait) {
           margin-left: 12px;
         }
 
         > a {
             font-family: $font-logo;
             font-size: 1.5rem;
-            @include for-size(phone) {
+            @include for-size(tablet-portrait) {
                 font-size: 0.9rem;
               }
         }
@@ -47,7 +47,7 @@ ul {
     flex-direction: row;
     justify-content: flex-end;
 
-    @include for-size(phone) {
+    @include for-size(tablet-portrait) {
       justify-content: space-evenly;
     }
 
@@ -66,7 +66,7 @@ ul {
 
         > a {
             font-size: 1.5rem;
-            @include for-size(phone){
+            @include for-size(tablet-portrait){
               font-size: 1rem;
             }
             &.active-link {
@@ -79,7 +79,7 @@ ul {
 
 i {
     font-size: 2rem;
-    @include for-size(phone) {
+    @include for-size(tablet-portrait) {
       font-size: 1.8rem;
     }
 }

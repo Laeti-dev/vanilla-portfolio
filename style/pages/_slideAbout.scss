@@ -2,7 +2,9 @@
 @import "../utils/mixin";
 
 #about {
-  height: 100vh;
+  @include for-size(tablet-landscape) {
+    height: 100vh;
+  }
 }
 .P-slides__content {
   &--about {
@@ -15,12 +17,12 @@
       text-align: justify;
     }
 
-    @include for-size(phone) {
+    @include for-size(tablet-portrait) {
       display: block;
       margin-top: 40px;
     }
 
-    @include for-size(tablet-portrait) {
+    @include for-size(tablet-landscape) {
       display: inline;
       margin-top: 40px;
 
@@ -37,7 +39,7 @@
   border-radius: 16px;
   margin: auto;
 
-  @include for-size(phone) {
+  @include for-size(tablet-portrait) {
     width: 304px;
     margin-top: 40px;
   }

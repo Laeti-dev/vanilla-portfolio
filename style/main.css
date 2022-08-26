@@ -37,7 +37,7 @@ p {
   padding: 24px 24px;
   text-align: center;
 }
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   p {
     font-style: normal;
     line-height: 24px;
@@ -203,7 +203,7 @@ textarea {
   background-color: #494953;
   padding: 0 16px;
 }
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   .P-navbar {
     height: 56px;
     position: fixed;
@@ -214,7 +214,7 @@ textarea {
   align-items: center;
   margin-left: 16px;
 }
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   .P-navbar__logo {
     margin-left: 12px;
   }
@@ -223,7 +223,7 @@ textarea {
   font-family: "Shadows Into Light", cursive;
   font-size: 1.5rem;
 }
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   .P-navbar__logo > a {
     font-size: 0.9rem;
   }
@@ -239,7 +239,7 @@ ul {
   flex-direction: row;
   justify-content: flex-end;
 }
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   ul {
     justify-content: space-evenly;
   }
@@ -261,7 +261,7 @@ ul li {
 ul li > a {
   font-size: 1.5rem;
 }
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   ul li > a {
     font-size: 1rem;
   }
@@ -273,7 +273,7 @@ ul li > a.active-link {
 i {
   font-size: 2rem;
 }
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   i {
     font-size: 1.8rem;
   }
@@ -281,9 +281,13 @@ i {
 
 #welcome {
   padding-top: 46px;
-  height: 100vh;
 }
-@media (max-width: 599px) {
+@media (min-width: 900px) {
+  #welcome {
+    height: 100vh;
+  }
+}
+@media (max-width: 600px) {
   #welcome {
     padding-top: 72px;
   }
@@ -304,8 +308,9 @@ i {
 .section {
   text-align: center;
   align-self: center;
+  margin-top: 10%;
 }
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   .section {
     flex: 0;
   }
@@ -319,7 +324,7 @@ i {
   line-height: 40px;
   text-align: center;
 }
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   .section > p {
     font-style: normal;
     line-height: 24px;
@@ -334,8 +339,10 @@ i {
   border-radius: 16px;
 }
 
-#about {
-  height: 100vh;
+@media (min-width: 900px) {
+  #about {
+    height: 100vh;
+  }
 }
 
 .P-slides__content--about {
@@ -347,13 +354,13 @@ i {
 .P-slides__content--about > p {
   text-align: justify;
 }
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   .P-slides__content--about {
     display: block;
     margin-top: 40px;
   }
 }
-@media (max-width: 600px) {
+@media (min-width: 900px) {
   .P-slides__content--about {
     display: inline;
     margin-top: 40px;
@@ -368,7 +375,7 @@ i {
   border-radius: 16px;
   margin: auto;
 }
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   .profile {
     width: 304px;
     margin-top: 40px;

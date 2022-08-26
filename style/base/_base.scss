@@ -40,7 +40,7 @@ p {
   padding: 24px 24px;
   text-align: center;
 
-    @include for-size(phone) {
+    @include for-size(tablet-portrait) {
       font-style: normal;
       line-height: 24px;
       letter-spacing: 1px;
