@@ -288,6 +288,7 @@ i {
 
 #welcome {
   padding-top: 46px;
+  height: 100vh;
 }
 @media (max-width: 599px) {
   #welcome {
@@ -367,7 +368,7 @@ i {
 }
 
 .profile {
-  width: 360px;
+  width: 25%;
   border-radius: 16px;
   margin: auto;
 }
