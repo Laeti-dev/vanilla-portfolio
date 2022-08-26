@@ -8,7 +8,7 @@
   grid-template-columns: 1fr 2fr;
   color: $color-nav;
 
-  @include for-size(phone) {
+  @include for-size(tablet-portrait) {
     display: block;
     width: 80%;
   }

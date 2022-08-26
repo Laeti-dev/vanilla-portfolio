@@ -384,7 +384,7 @@ i {
   grid-template-columns: 1fr 2fr;
   color: #494953;
 }
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   .P-slide__project {
     display: block;
     width: 80%;
