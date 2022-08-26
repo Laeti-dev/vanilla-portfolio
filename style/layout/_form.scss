@@ -2,9 +2,9 @@
 @import "../utils/mixin";
 
 .P-slides__content--form{
-  border: 1px black solid;
+  border: 1px solid $color-lightfont;
   border-radius: 24px;
-  box-shadow: 2px 2px 2px $color-lightfont;
+  box-shadow: 1px 1px 1px $color-lightfont;
   width: 75%;
   padding: 32px;
 }
@@ -22,6 +22,5 @@ textarea {
 
 button {
   @include for-size(phone){
-  color: white;
   }
 }
