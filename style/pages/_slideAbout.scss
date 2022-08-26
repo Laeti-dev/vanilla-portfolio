@@ -22,15 +22,6 @@
       margin-top: 40px;
     }
 
-    @include for-size(tablet-landscape) {
-      display: inline;
-      margin-top: 40px;
-
-      > p {
-        width: 90%;
-      }
-    }
-
   }
 }
 

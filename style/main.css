@@ -8,7 +8,7 @@ body {
   font-family: "roboto", sans-serif;
   font-size: 1rem;
 }
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   * {
     font-size: 0.8rem;
   }
@@ -358,15 +358,6 @@ i {
   .P-slides__content--about {
     display: block;
     margin-top: 40px;
-  }
-}
-@media (min-width: 900px) {
-  .P-slides__content--about {
-    display: inline;
-    margin-top: 40px;
-  }
-  .P-slides__content--about > p {
-    width: 90%;
   }
 }
 
