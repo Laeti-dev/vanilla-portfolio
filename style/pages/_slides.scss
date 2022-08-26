@@ -3,7 +3,6 @@
 
 
 #welcome {
-  padding-top: 46px;
   @include for-size(tablet-landscape){
     height: 100vh;
   }
@@ -32,7 +31,7 @@
 .section {
   text-align: center;
   align-self: center;
-  margin-top: 10%;
+  margin-top: 8%;
   // flex: 1 0 100%;
 
   @include for-size(tablet-portrait) {

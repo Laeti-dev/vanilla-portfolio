@@ -154,7 +154,14 @@ button {
   }
 }
 hr {
+  width: 40%;
+}
+
+.new-section {
   width: 60%;
+  height: 1px;
+  border: none;
+  background-color: #FF5656;
 }
 
 .P-slides__content--title-underline {
@@ -279,9 +286,6 @@ i {
   }
 }
 
-#welcome {
-  padding-top: 46px;
-}
 @media (min-width: 900px) {
   #welcome {
     height: 100vh;
@@ -308,7 +312,7 @@ i {
 .section {
   text-align: center;
   align-self: center;
-  margin-top: 10%;
+  margin-top: 8%;
 }
 @media (max-width: 600px) {
   .section {
