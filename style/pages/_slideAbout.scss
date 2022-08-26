@@ -1,11 +1,14 @@
 @import "../utils/variables";
 @import "../utils/mixin";
 
+#about {
+  height: 100vh;
+}
 .P-slides__content {
   &--about {
     display: flex;
     flex-direction: row;
-    padding-top: 24px;
+    padding-top: 8px;
     letter-spacing: 0.1rem;
 
     >p {
@@ -20,6 +23,7 @@
     @include for-size(tablet-portrait) {
       display: inline;
       margin-top: 40px;
+
       > p {
         width: 90%;
       }
