@@ -31,7 +31,6 @@
   margin: auto;
 
   @include for-size(tablet-portrait) {
-    width: 304px;
-    margin-top: 40px;
+    width: 50%;
   }
 }

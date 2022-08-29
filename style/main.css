@@ -383,8 +383,7 @@ i {
 }
 @media (max-width: 600px) {
   .profile {
-    width: 304px;
-    margin-top: 40px;
+    width: 50%;
   }
 }
 
