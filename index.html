@@ -143,9 +143,19 @@
               <hr>
               <!-- fourth -->
               <div class="P-slide__project">
-                <div class="P-slide__project--media">
-                  <img src="./style/img/longest-word.png" alt="app screenshot" width="400px">
-                </div>
+                <div class="P-slide__project--media slide-wrapper">
+                  <button class="slide-arrow" id="slide-arrow-prev">
+                    &#8249;
+                  </button>
+
+                  <button class="slide-arrow" id="slide-arrow-next">
+                    &#8250;
+                  </button>
+                  <div class="carousel-container">
+                    <img src="./style/img/longest-word.png" alt="app screenshot" width="400px" class="slide">
+                    <img src="./style/img/longestword-test.png" alt="testing" width="400px" class="slide">
+                  </div>
+                  </div>
                 <div class="P-slide__project--details">
                   <h2>The longest word game</h2>
                   <p>
@@ -173,7 +183,7 @@
                   <input type="subject" name="_subject" placeholder="Subject" required>
                   <textarea name="message" required></textarea>
                     <input type="hidden" name="_autoresponse" value="Hello ! Your message has been received. I will reply to you within 24h.">
-                    <button type="submit">Send</button>
+                    <button type="submit" class="form-btn">Send</button>
                 </form>
               </div>
           </div>
