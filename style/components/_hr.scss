@@ -7,4 +7,8 @@ hr{
   height: 1px;
   border: none;
   background-color: $color-active;
+
+  @include for-size(tablet-portrait) {
+    margin-top: 24px;
+  }
 }
