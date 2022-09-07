@@ -19,6 +19,14 @@
         letter-spacing: 1px;
         line-height: 32px;
         align-self: end;
+
+        >a {
+          color: $color-nav;
+
+          &:hover{
+            color: $color-active;
+          }
+        }
       }
   }
 

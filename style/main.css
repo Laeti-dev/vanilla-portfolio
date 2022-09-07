@@ -412,6 +412,12 @@ i {
   line-height: 32px;
   align-self: end;
 }
+.P-slide__project--details p > a {
+  color: #494953;
+}
+.P-slide__project--details p > a:hover {
+  color: #FF5656;
+}
 .P-slide__project--media {
   flex-grow: 1;
   align-self: center;
